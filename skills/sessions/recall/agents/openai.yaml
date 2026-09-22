@@ -1,0 +1,3 @@
+interface:
+  display_name: "Recall"
+  short_description: "Recover context from past agent sessions"

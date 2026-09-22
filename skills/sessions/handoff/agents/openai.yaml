@@ -1,0 +1,5 @@
+interface:
+  display_name: "Handoff"
+  short_description: "Write a self-contained prompt to hand work to another agent"
+policy:
+  allow_implicit_invocation: false

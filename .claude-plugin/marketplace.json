@@ -1,0 +1,17 @@
+{
+  "name": "tyak99",
+  "owner": {
+    "name": "Babatunde Yakub",
+    "url": "https://github.com/Tyak99"
+  },
+  "description": "Tunde Yakub's agent skills, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "tyak99-skills",
+      "source": "./",
+      "description": "Recall context from past agent sessions, hand work off between agents, and more.",
+      "category": "productivity",
+      "keywords": ["skills", "context", "memory", "handoff", "sessions"]
+    }
+  ]
+}
