@@ -9,9 +9,17 @@
     {
       "name": "tyak99-skills",
       "source": "./",
-      "description": "Recall context from past agent sessions, hand work off between agents, and more.",
+      "description": "Recall past agent sessions, hand work off between agents, and preview and prove UI changes.",
       "category": "productivity",
-      "keywords": ["skills", "context", "memory", "handoff", "sessions"]
+      "keywords": [
+        "skills",
+        "context",
+        "memory",
+        "handoff",
+        "sessions",
+        "ui",
+        "screenshots"
+      ]
     }
   ]
 }

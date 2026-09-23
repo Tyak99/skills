@@ -1,16 +1,27 @@
 {
   "name": "tyak99-skills",
-  "version": "0.1.0",
-  "description": "Tunde Yakub's agent skills: recall context from past sessions, hand work off between agents, and more.",
+  "version": "0.2.0",
+  "description": "Tunde Yakub's agent skills: recall context from past sessions, hand work off between agents, preview UI changes before they're built and prove them after.",
   "author": {
     "name": "Babatunde Yakub",
     "url": "https://github.com/Tyak99"
   },
   "repository": "https://github.com/Tyak99/skills",
   "license": "MIT",
-  "keywords": ["skills", "context", "memory", "handoff", "sessions"],
+  "keywords": [
+    "skills",
+    "context",
+    "memory",
+    "handoff",
+    "sessions",
+    "ui",
+    "screenshots",
+    "review"
+  ],
   "skills": [
     "./skills/sessions/recall",
-    "./skills/sessions/handoff"
+    "./skills/sessions/handoff",
+    "./skills/ui/ui-change-preview",
+    "./skills/ui/ui-proof-walkthrough"
   ]
 }

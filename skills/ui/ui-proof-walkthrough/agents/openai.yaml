@@ -1,0 +1,5 @@
+interface:
+  display_name: "UI Proof Walkthrough"
+  short_description: "Present completed UI work with annotated evidence"
+  brand_color: "#2563EB"
+  default_prompt: "Use $ui-proof-walkthrough to present the completed UI changes as annotated visual proof."

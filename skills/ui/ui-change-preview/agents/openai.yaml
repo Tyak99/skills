@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Change Preview"
+  short_description: "Preview proposed UI changes before implementation"
+  default_prompt: "Show me an annotated preview of the proposed UI changes before implementation begins."
