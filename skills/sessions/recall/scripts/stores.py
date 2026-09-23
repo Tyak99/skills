@@ -18,7 +18,7 @@ from pathlib import Path
 # Prompts that carry no topic signal -- injected context, not something the user typed.
 NOISE = re.compile(
     r"^\s*(<local-command|<system-reminder|<environment_context|<user_instructions|"
-    r"<permissions|# AGENTS\.md|caveat:|\[request interrupted)",
+    r"<permissions|<recommended_plugins|# AGENTS\.md|caveat:|\[request interrupted)",
     re.I,
 )
 CMD_NAME = re.compile(r"<command-name>([^<]*)</command-name>")
