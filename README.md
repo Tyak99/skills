@@ -45,9 +45,25 @@ For UI changes without a design file: approve the change on the real screen befo
 | [`ui-change-preview`](skills/ui/ui-change-preview/SKILL.md) | Before writing code, screenshots the current UI and marks exactly what will change ("New button will appear here"), labelled *Concept preview — not implemented*. Stops until you approve or revise. |
 | [`ui-proof-walkthrough`](skills/ui/ui-proof-walkthrough/SKILL.md) | After the work is done, turns fresh screenshots of the running app into a short annotated walkthrough of what changed. Screenshots are never redrawn, so it's evidence, not a mockup. |
 
+### Review
+
+Reviewing changes you didn't write line by line, usually AI-written ones.
+
+| Skill | What it does |
+|---|---|
+| [`pr-decisions`](skills/review/pr-decisions/SKILL.md) | Point it at a PR, MR, branch or diff. It lists the decisions the change makes without saying so: timeouts, budgets, caps, retries, defaults, what it skips, how it fails and what it trusts. Each one shows the value, where it's set, the reason given (or **not recorded**) and what breaks if it's wrong. Also flags values that must change together. It isn't a bug review; it's what you'd need to explain after the change ships. |
+
+### Planning
+
+Turn a feature idea or ticket into work an implementing agent can pick up.
+
+| Skill | What it does |
+|---|---|
+| [`generate-spec`](skills/planning/generate-spec/SKILL.md) | Reads the source material and relevant code, agrees on UI design when needed, then writes an implementation spec with technical decisions, acceptance criteria, a dependency-ordered task queue, a QA plan, risks, and scope-based complexity. Requires your approval before posting the spec to a ticket. |
+
 ## Requirements
 
-- `recall` needs Python 3 (standard library only).
+- `recall` and `pr-decisions` need Python 3 (standard library only). `pr-decisions` also needs `git`, plus `gh` or `glab` if you want it to read PR descriptions and discussion.
 - `handoff` needs `git` for repo context; it works outside a repo too.
 - The UI skills need an agent that can drive a browser and take screenshots (a built-in browser, Playwright, or similar) and show images in chat.
 

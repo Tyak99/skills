@@ -9,7 +9,7 @@
     {
       "name": "tyak99-skills",
       "source": "./",
-      "description": "Recall past agent sessions, hand work off between agents, and preview and prove UI changes.",
+      "description": "Recall sessions, hand work off, generate feature specs, preview and prove UI changes, and surface decisions a PR quietly makes.",
       "category": "productivity",
       "keywords": [
         "skills",
@@ -18,7 +18,11 @@
         "handoff",
         "sessions",
         "ui",
-        "screenshots"
+        "screenshots",
+        "review",
+        "pull-requests",
+        "specifications",
+        "planning"
       ]
     }
   ]

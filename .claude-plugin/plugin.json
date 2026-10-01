@@ -1,7 +1,7 @@
 {
   "name": "tyak99-skills",
-  "version": "0.2.0",
-  "description": "Tunde Yakub's agent skills: recall context from past sessions, hand work off between agents, preview UI changes before they're built and prove them after.",
+  "version": "0.4.0",
+  "description": "Tunde Yakub's agent skills: recall sessions, hand work off, generate feature specs, preview and prove UI changes, and surface decisions a PR quietly makes.",
   "author": {
     "name": "Babatunde Yakub",
     "url": "https://github.com/Tyak99"
@@ -16,12 +16,18 @@
     "sessions",
     "ui",
     "screenshots",
-    "review"
+    "review",
+    "pull-requests",
+    "decisions",
+    "specifications",
+    "planning"
   ],
   "skills": [
     "./skills/sessions/recall",
     "./skills/sessions/handoff",
     "./skills/ui/ui-change-preview",
-    "./skills/ui/ui-proof-walkthrough"
+    "./skills/ui/ui-proof-walkthrough",
+    "./skills/review/pr-decisions",
+    "./skills/planning/generate-spec"
   ]
 }
