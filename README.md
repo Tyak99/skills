@@ -35,6 +35,7 @@ Keeping context alive across sessions and across agents.
 |---|---|
 | [`recall`](skills/sessions/recall/SKILL.md) | Before answering, searches your past Claude Code and Codex sessions for the ticket, person or thing you just mentioned, and returns a short brief: what it is, what was already decided (and rejected), what's still open, and what it couldn't find. Runs locally; nothing leaves your machine. |
 | [`handoff`](skills/sessions/handoff/SKILL.md) | Writes a self-contained prompt so another agent — or you, tomorrow, in a different tool — can pick up exactly where this session left off. Saved to `~/.agents/handoffs/` and copied to your clipboard. Run it explicitly: `/handoff`. |
+| [`handoff-to-new-session`](skills/sessions/handoff-to-new-session/SKILL.md) | When a session has run too long, starts a fresh one that picks up where it left off, with nothing to copy. Its brief carries what only lived in the chat (decisions and why, things ruled out, unsaved drafts, the next move), is backed up to `~/.claude/handoffs/`, and opens as a new session. Claude Code desktop app only. Run it explicitly: `/handoff-to-new-session`. |
 
 ### UI
 
@@ -65,6 +66,7 @@ Turn a feature idea or ticket into work an implementing agent can pick up.
 
 - `recall` and `pr-decisions` need Python 3 (standard library only). `pr-decisions` also needs `git`, plus `gh` or `glab` if you want it to read PR descriptions and discussion.
 - `handoff` needs `git` for repo context; it works outside a repo too.
+- `handoff-to-new-session` needs the Claude Code desktop app, which provides the tool that starts a new session.
 - The UI skills need an agent that can drive a browser and take screenshots (a built-in browser, Playwright, or similar) and show images in chat.
 
 ## License

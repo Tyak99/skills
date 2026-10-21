@@ -1,0 +1,5 @@
+interface:
+  display_name: "Handoff to new session"
+  short_description: "Continue this work in a fresh Claude Code desktop session"
+policy:
+  allow_implicit_invocation: false

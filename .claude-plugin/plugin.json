@@ -1,6 +1,6 @@
 {
   "name": "tyak99-skills",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Tunde Yakub's agent skills: recall sessions, hand work off, generate feature specs, preview and prove UI changes, and surface decisions a PR quietly makes.",
   "author": {
     "name": "Babatunde Yakub",
@@ -25,6 +25,7 @@
   "skills": [
     "./skills/sessions/recall",
     "./skills/sessions/handoff",
+    "./skills/sessions/handoff-to-new-session",
     "./skills/ui/ui-change-preview",
     "./skills/ui/ui-proof-walkthrough",
     "./skills/review/pr-decisions",
